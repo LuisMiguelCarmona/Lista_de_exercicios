@@ -18,5 +18,5 @@ def csva(x='.'):
         n=q.split('\n')[4]#seleciona uma linha aleatória para contar o numero de colunas, depois de ter separado todas as linhas do programa (O que deve ser muito ineficiente, mas eu não sei como fazer sem ser assim)
         z=n.split(';')#Separa os campos de uma linha.
         y+=len(z)#O numero de colunas é igual a quantidade de campos que foram separados no exemplo interior.
-    c='Os arquivos tem: '+str(x)+' linhas no total, e '+str(y)+' colunas unicas.'   
+    c='Os arquivos tem: '+str(x - 1)+' linhas no total, e '+str(y)+' colunas unicas.'   
     return c
